@@ -6,7 +6,6 @@ def checker(day:int,month:int,year:int):
     flag = True
     if year %4 == 0 and year %100!=0 or (year % 100 == 0 and year % 400 == 0):
         flag = False 
-    
     if flag == False and month == 2:
         if day <1 or day >29:
             return False
