@@ -4,7 +4,7 @@ def checker(day:int,month:int,year:int):
     if day < 1 or day >31:
         return False
     flag = True
-    if year %4 == 0 and year %100!=0:
+    if year %4 == 0 and year %100!=0 or (year % 100 == 0 and year % 400 == 0):
         flag = False 
     
     if flag == False and month == 2:
