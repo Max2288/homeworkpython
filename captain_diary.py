@@ -13,7 +13,7 @@ def new_data(cur_date: str, number: int) -> str:
         str - new data to which was aded number.
     """
     my_date = [int(d_m_y) for d_m_y in cur_date.split('.')]
-    cur = date(my_date[2], my_date[1], my_date[1])
+    cur = date(my_date[2], my_date[1], my_date[0])
     interval = timedelta(days=number)
     new_date = cur + interval
     return new_date.isoformat()
