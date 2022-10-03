@@ -4,7 +4,7 @@ from substring_in_string import fifth_task
 from check_year import check_date
 
 
-test_date = [(2000, 2, 29, True), (1900, 2, 29, False), (1900, 2, 28, True)]
+test_date = [(2000, 2, 29, True), (1900, 2, 228, False)]
 
 
 @pytest.mark.parametrize('year, month, day, expect', test_date)
